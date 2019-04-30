@@ -1,0 +1,47 @@
+{
+  "label": "Tracers",
+  "name": "tracers",
+  "apiVersion": "v1",
+  "internal": false,
+  "configurationType": "GLOBAL",
+  "deployment": {
+    "profiles": [
+      {
+        "name": "default",
+        "label": "Default",
+        "memory": 256,
+        "description": "Default configuration"
+      }
+    ],
+    "allowMultipleInstances": true
+  },
+  "icon48": "https://storage.googleapis.com/static.slingrs.io/platform/endpoints/tracers.png",
+  "configurationHelpUrl": "/endpoints_tracers.html#configuration",
+  "status": "ACTIVE",
+  "stores": [],
+  "events": [],
+  "functions": [
+    {
+      "label": "Search",
+      "name": "_search"
+    }
+  ],
+  "scripts": [
+    "functions.js"
+  ],
+  "listeners": [],
+  "configuration": [
+    {
+      "label": "Access Profile Name",
+      "name": "accessProfileName",
+      "type": "text",
+      "required": true
+    },
+    {
+      "label": "Access Profile Password",
+      "name": "accessProfilePassword",
+      "type": "password",
+      "required": true
+    }
+  ]
+}
